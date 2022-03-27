@@ -29,3 +29,23 @@ h4, p  {
     
 }
 
+#inc, #dec, #reset {
+
+    margin:10px;
+    background-color:blue;
+    border-color:blue;
+    color:white;
+}
+
+#mess, #mess2 {
+
+
+    font-size:20px;
+    color: red;
+    font-family: cursive ;
+}
+
+     
+
+     
+

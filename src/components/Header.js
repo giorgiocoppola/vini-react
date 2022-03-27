@@ -1,6 +1,7 @@
 
 import './Header.css'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
 
     <h1>Cantina sociale Bordeaux</h1>
 
-    <button className="accedi"><a href="accedi.html">Accedi</a></button>
+    <button className="accedi"><Link to="/accedi">Accedi</Link></button>
 
     </header>
   )
