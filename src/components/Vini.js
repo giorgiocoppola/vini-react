@@ -2,12 +2,15 @@ import './Vini.css'
 import React,{useState} from 'react'
 
 
+
 const Vini = (props) => {
 
     const {nome,img,prezzo,max} = props;
 
     const [count,setCount] = useState(0);
     const [message,setMessage] = useState("");
+    const message2 = "max prodotti";
+    
     const min = 0;
 
     const incrementa = () => {
@@ -22,6 +25,8 @@ const Vini = (props) => {
       } else {
 
           setCount(count + 1);
+          
+    
       }
 
     }
@@ -68,6 +73,8 @@ const Vini = (props) => {
          <h4>{nome}</h4>
          <p>{prezzo} €</p>
          <p>{count}</p>
+         <p>{message2}</p>
+         <p>{max}</p>
          <div className="cont">
            <button id="inc" onClick={incrementa}>+</button>
            <button id="dec" onClick={decrementa}>-</button>
