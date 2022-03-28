@@ -1,10 +1,23 @@
 
 import './Accedi.css'
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
 
 function Accedi() {
+
+    const [email,setEmail] = useState("");
+    const [password,setPassword] = useState("");
+
+    const handleSubmit = (e) => {
+
+
+        e.preventDefault();
+        setEmail("");
+        setPassword("")
+        alert("Accesso avvenuto con successo");
+    }
+
   return (
     <div className='accedi-pagina'>
   
@@ -25,15 +38,15 @@ function Accedi() {
            <form className="form-accedi">
   
                <label for="email" className="lab">Email</label>
-               <input type="email" name="email" id="email" required/> 
+               <input type="email" name="email" id="email" value={email} onChange = {(e)=>setEmail(e.target.value) } /> 
    
    
                <label for="email" className="lab">Password</label>
-               <input type="password" name="email" id="password" required /> 
+               <input type="password" name="email" id="password" value={password} onChange = {(e)=>setPassword(e.target.value)}/> 
 
                <p className="avvertenza">Se non sei registrato <Link to ="/#" id="click">clicca qui</Link></p>
 
-               <button className="bott-accedi">Accedi</button>
+               <button className="bott-accedi" onClick={handleSubmit}>Accedi</button>
     
             </form>
 
