@@ -71,10 +71,9 @@ const Vini = (props) => {
          
          <img src={img} alt={nome} width="400px" /> 
          <h4>{nome}</h4>
-         <p>{prezzo} €</p>
-         <p>{count}</p>
-         <p>{message2}</p>
-         <p>{max}</p>
+         <p id = "prezzo">{prezzo} €</p>
+         <p id = "conteggio">{count}</p>
+      
          <div className="cont">
            <button id="inc" onClick={incrementa}>+</button>
            <button id="dec" onClick={decrementa}>-</button>
