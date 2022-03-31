@@ -6,12 +6,13 @@ import Footer from '../components/Footer'
 
 function Accedi() {
 
+
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
 
     const handleSubmit = (e) => {
 
-
+      
         e.preventDefault();
         setEmail("");
         setPassword("")
@@ -44,7 +45,7 @@ function Accedi() {
                <label for="email" className="lab">Password</label>
                <input type="password" name="email" id="password" value={password} onChange = {(e)=>setPassword(e.target.value)}/> 
 
-               <p className="avvertenza">Se non sei registrato <Link to ="/#" id="click">clicca qui</Link></p>
+               <p className="avvertenza">Se non sei registrato <Link to ="/registrazione" id="click">clicca qui</Link></p>
 
                <button className="bott-accedi" onClick={handleSubmit}>Accedi</button>
     
