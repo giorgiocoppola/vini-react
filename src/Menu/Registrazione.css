@@ -46,7 +46,10 @@
     
 }
 
+#inp-email, #inp-pass {
 
+    width:400px;
+}
 
 
 
