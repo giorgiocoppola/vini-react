@@ -69,7 +69,7 @@ const Vini = (props) => {
   return (
     <div className="vini">
          
-         <img src={img} alt={nome} width="400px" /> 
+         <img src={img} alt={nome} width="400px" height= "400px" /> 
          <h4>{nome}</h4>
          <p id = "prezzo">{prezzo} €</p>
          <p id = "conteggio">{count}</p>
