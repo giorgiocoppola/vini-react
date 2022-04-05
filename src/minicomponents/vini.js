@@ -78,6 +78,15 @@ const vini = [
         prezzo: 11,
         max:4,
 
+     },
+
+     {
+        id:10,
+        img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR6Q3ZCqqZeCsZd_kF6_r2rSt9VgvuaobA83f3cjCIUVoMhSOYCvSOmEG5itbs6aiyPWIo5tjpxNDUboJXq3LzNNpMM80HnmwAtnKGrB2USM851u8WXZWpgyg&usqp=CAE",
+        nome: "Marche Rosso Armonia Di Mezzanotte",
+        prezzo: 52.50,
+        max:7,
+
      }
 
 ];

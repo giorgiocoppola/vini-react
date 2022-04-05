@@ -9,7 +9,7 @@ const Vini = (props) => {
 
     const [count,setCount] = useState(0);
     const [message,setMessage] = useState("");
-    const message2 = "max prodotti";
+   
     
     const min = 0;
 

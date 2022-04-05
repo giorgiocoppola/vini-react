@@ -16,6 +16,7 @@
 
  main {
 
+   
     margin-bottom:140px;
  }
 
@@ -34,6 +35,15 @@
     border-color:white;
    
 }
+
+.mess {
+
+    color:red;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+
+}
+
 #click {
 
     color:blue;
