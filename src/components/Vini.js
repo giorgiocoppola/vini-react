@@ -3,9 +3,8 @@ import React,{useState} from 'react'
 
 
 
-const Vini = (props) => {
+const Vini = ({nome,img,prezzo,max}) => {
 
-    const {nome,img,prezzo,max} = props;
 
     const [count,setCount] = useState(0);
     const [message,setMessage] = useState("");

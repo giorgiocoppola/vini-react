@@ -6,9 +6,10 @@ function Footer() {
   return (
     <footer>
          CANTINA SOCIALE BORDEAUX <br /> Via Cristoforo Colombo,45 <br /> 
-         74100 - Taranto <br /> Email: giorgiocoppola12@gmail.com <br /> Tel:099 4532345 
-         <br /> Cell: 3354329760
+         74100 - Taranto <br /> Email: giorgiocoppola12@gmail.com <br /> Tel:099-4532345 
+         <br /> Cell: 335-4329760
     </footer>
+   
   )
 }
 
