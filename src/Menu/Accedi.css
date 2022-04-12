@@ -14,7 +14,7 @@
     border-color: rgb(0, 247, 255);
 }
 
- main {
+.accedi-main {
 
    
     margin-bottom:140px;
@@ -65,6 +65,8 @@
     background-color:green;
     border-color:green;
     color:white;
+    position:relative;
+    left:25px;
 
 }
 

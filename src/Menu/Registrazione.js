@@ -32,6 +32,7 @@ function Registrazione() {
    const [avviso10,setAvviso10] = useState("");
    const [avviso11,setAvviso11] = useState("");
    const [avviso12,setAvviso12] = useState("");
+   const [persona,setPersona] = useState([]);
 
 
    const handleSubmit = (e) => {
@@ -176,6 +177,22 @@ function Registrazione() {
       setPassword("");
       setMessaggio("");
       setCheckbox(""); 
+      setPersona( [...persona, { id : persona.length + 1,
+                               nome: nome, 
+                               cognome: cognome,
+                               datadinascita: datadinascita,
+                               luogodinascita: luogodinascita,
+                               indirizzo: indirizzo,
+                               residenza: residenza,
+                               sesso: sesso,
+                               telefono: telefono,
+                               cellulare: cellulare,
+                               email: email,
+                               password: password,
+                               messaggio: messaggio,
+                               checkbox: checkbox
+                            }
+                   ] )
      // alert("Accesso avvenuto con successo");
   }
 

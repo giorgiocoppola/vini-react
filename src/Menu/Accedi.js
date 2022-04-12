@@ -10,7 +10,10 @@ function Accedi() {
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
     const [mess,setMess] = useState("");
-    const [mess2,setMess2] = useState("")
+    const [mess2,setMess2] = useState("");
+    const [accesso,setAccesso] = useState([]);
+
+
    
    
 
@@ -40,10 +43,18 @@ function Accedi() {
         setTimeout(function() { setMess2("")},3000);
           
       }
+      
+      setAccesso( [ ...accesso, {
+                                  id: accesso.length + 1,
+                                  email:email,
+                                  password:password
+                                }
 
-     /* e.preventDefault();
+                  ])
+                  
+      e.preventDefault();
       setEmail("");
-      setPassword(""); */ 
+      setPassword("");  
      
       
 
@@ -71,11 +82,11 @@ function Accedi() {
            <form className="form-accedi">
   
                <label for="email" className="lab">Email</label>
-               <input type="email" name="email" id="email" value={email} onChange = {(e)=>setEmail(e.target.value)  } /> 
+               <input type="email" name="email" id="email"  onChange = {(e)=>setEmail(e.target.value)  } /> 
                <p className="mess">{mess}</p>
    
                <label for="email" className="lab">Password</label>
-               <input type="password" name="email" id="password" value={password} onChange = {(e)=>setPassword(e.target.value)}/> 
+               <input type="password" name="email" id="password"  onChange = {(e)=>setPassword(e.target.value)}/> 
                <p className="mess">{mess2}</p>
 
                <p className="avvertenza">Se non sei registrato <Link to ="/registrazione" id="click">clicca qui</Link></p>
